@@ -1,11 +1,14 @@
 package app;
 
-import app.entity.User;
+import app.controller.AddressController;
+import app.controller.UserController;
 
 public class Main {
     public static void main(String[] args) {
-        User user = new User("Viacheslav", "fbiaf", 12);
+        UserController userController = new UserController();
+        AddressController addressController = new AddressController();
 
-        System.out.println(user.getAge());
+        userController.run();
+        addressController.run();
     }
 }
