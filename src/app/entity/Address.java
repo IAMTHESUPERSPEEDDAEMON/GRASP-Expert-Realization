@@ -18,7 +18,7 @@ public class Address {
     public String toString(){
 
         return "User address" +
-                "\n Country=" + country +
+                "\n Country='" + country + '\'' +
                 "\n Address='" + address + '\'' +
                 "\n House number='" + houseNumber + '\'';
     }
